@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css"/>
+
+<div class="container">
+  <img src="wc.jpeg" class="background-img" alt="Background Image">
+
+  <a href="login.html">
+    <img src="user.jpg" class="user-icon" alt="Click to login">
+  </a>
+</div>
+  </div>
+<h2 style ="text-align:center;">A WORLD WHERE YOU CAN ESCAPE FROM REALITY😍</h2>
+<body>
+<div class ="container">
+<!-- Left: Green buttons -->
+ <div class="sidebar">
+  <button onclick="loadPage('nosta.html')">Weekly Releases</button>
+<button onclick="loadPage('originals.html')">ONGOING</button>
+<button onclick="loadPage('completed.html')">COMPLETED</button>
+<button onclick="loadPage('popular.html')">POPULAR</button>
+<button onclick="loadPage('web.html')">About us</button>
+    </div>
+
+<!-- Right: Display area -->
+  <div class="content">
+    <iframe id="contentFrame" src=""></iframe>
+  </div>
+</div>
+
+<script>
+  function loadPage(page) {
+    document.getElementById('contentFrame').src = page;
+  }
+</script>
+
+</body>
+</html>
